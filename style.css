@@ -1,0 +1,91 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.uniname {
+    color: #333;
+    font-size: 24px;
+}
+
+.course-name {
+    color: #777;
+    font-size: 18px;
+}
+
+.cgpa {
+    font-size: 18px;
+}
+
+.sem-detail {
+    margin-bottom: 40px;
+}
+
+.sem-no {
+    font-size: 24px;
+    color: #333;
+}
+
+.sgpa {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sgpa-title {
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-heads {
+    background-color: #333;
+    color: #fff;
+    border-right: 1px solid #fff; /* Add this line to create column lines */
+}
+
+.table-data {
+    border: 1px solid #ccc;
+    border-right: 1px solid #ccc; /* Add this line to create column lines */
+    border-bottom: none;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Add row lines to the table */
+.table-data:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .table-data {
+        font-size: 14px;
+    }
+}
